@@ -1,6 +1,5 @@
 # learn-react
 
-<<<<<<< HEAD
 #destructuring
 
 extract array element/object, store them in var
@@ -72,8 +71,6 @@ class : className
 reusable
 configureable
 
-=======
->>>>>>> master
 # SECTION 2
 
 # class, prop & methods
