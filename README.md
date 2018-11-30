@@ -36,7 +36,7 @@ return args.filter(el => el === 1);
 
 console.log(filter(1,2,3,4))
 
-#destructuring
+# destructuring
 
 extract array element/object, store them in var
 
@@ -44,7 +44,7 @@ const numbers = [1, 2, 3, 4];
 [num1, ,, num4] = numbers;
 console.log(num1,num4) // 1,4
 
-#copy object in place, copy immutable way, called spread
+# copy object in place, copy immutable way, called spread
 
 example
 const person = {
@@ -60,7 +60,7 @@ person.name = 'Habibi'
 console.log(secondPerson)
 // [object Object] {name: "Ikhsan"}
 
-#array functions
+# array functions
 
 example
 const numbers = [1,2,3];
@@ -73,7 +73,7 @@ console.log(doubleNumArray);
 
 //[1, 2, 3][2, 4, 6]
 
-# CHAPTER 3
+# SECTION 3
 
 workflow
 
@@ -93,16 +93,20 @@ how to do?
 - compiler e.g. babel
 - development server
 
-#tools
+# tools
+
 node.js (use as package manager)
 
-#steps
+# steps
+
 sudo npm install create-react-app -g
 create-react-app app-name
 
-#JSX
+# JSX
+
 class : className
 
-#Component
+# Component
+
 reusable
 configureable
