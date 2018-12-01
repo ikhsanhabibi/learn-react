@@ -17,13 +17,13 @@ class App extends Component {
     otherState: "some value"
   };
 
-  switchNameHandler = () => {
+  switchNameHandler = newName => {
     // alert("was clicked");
     // DON't DO THIS: this.state.persons[0].name = "Maximilian";
     this.setState({
       persons: [
         {
-          name: "Ikhsansss",
+          name: newName,
           age: 20
         },
         {
@@ -40,15 +40,21 @@ class App extends Component {
         <h1>Hi I am react app</h1>
         <p>This is p</p>
 
-        <button onClick={this.switchNameHandler}>Switch name</button>
+        <button onClick={this.switchNameHandler.bind(this, "Maximilian")}>
+          Switch name
+        </button>
+
         <Person
           name={this.state.persons[0].name}
           age={this.state.persons[0].age}
         />
+
         <Person
           name={this.state.persons[1].name}
           age={this.state.persons[1].age}
+          click={this.switchNameHandler.bind(this, "Max!")}
         />
+
         <Person name="Ikhsan Habibi" age="24">
           Hobby: Singing
         </Person>
