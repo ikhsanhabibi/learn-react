@@ -1,15 +1,105 @@
-# learn-react
+# [learn-react]
 
-# SECTION 2
+# [SECTION 1]
 
-# class, prop & methods
+# course outline
 
-prop: var
+getting started
+basics
+debugging
+styling
+components
+deeper
+HTTP request (connect server, AJAX)
+routing (domain name)
+forms & validation
+redux
+authentication
+testing
+deployement (send to server)
+bonus (animation, webpack)
+
+# what to do
+
+code along
+check source code
+go to stackoverflow
+practice
+
+# what is react?
+
+javascript library for building user interface, running on browser, not in server
+there is component, we can reuse
+dynamic, maintainable
+
+why react?
+
+- UI states becomes difficult to handle vanila JS
+- focus on bussines logic, not preventing your app from exploding
+- huge community, ecosystem
+
+react alternatives?
+
+- angular, vue, jquery
+
+two kind of applications?
+
+- single page : one single HTML page, build all components, one ReactDOM call (popular)
+- multi page :multiple HTML pages, build some components, ReactDOM call per widget/component
+
+# CodePen
+
+editor HTML, CSS, JS
+
+# [SECTION 2]
+
+# Next Gen JS
+
+clean, robust syntax
+
+# jsbin.com
+
+editor online
+
+# let, const, var
+
+var = use let and const
+const = constant value, not changed
+let = variables value (the new var, really variable)
+
+# arrow functions
+
+function myFunc(){} //normal
+const myFunc = (parameters) = {}
+
+# export & import
+
+export default name (const)
+export const myFunc = () => {}
+export const value = 10
+
+import name/nama from './name.js'
+import {myFunc} from './other.js'
+import {value as Werte} from './other.js'
+
+# classes
+
+to create component
+has property
+usage (constructor, function)
+inheritance
+
+super() in constructor child, if using this
+dont use super(), if using this (ES7)
+
+# properties & methods
+
+prop: var, attribute
 method: function
 
 # spread & rest operators (...)
 
-spread: split/merged an array elements/object
+spread: split/merged an array elements/object props
 
 example:
 const numbers = [1,2,3];
@@ -27,9 +117,9 @@ const newPerson = {
 
 console.log(newPerson); // [object Object] {age: 28, name: "Max"}
 
-rest: merge a list of function arguments into an array
+rest: merge a list of function arguments into an array (used less often)
 
-example:
+example: (args whatever names)
 const filter = (...args) => {
 return args.filter(el => el === 1);
 }
@@ -40,8 +130,18 @@ console.log(filter(1,2,3,4))
 
 extract array element/object, store them in var
 
+array example:
+[a,b] = ['Hello','Habibi']
+consol.log(a) //Hello
+consol.log(b) //Habibi
+
+object example:
+{name} = {name:'Habibi', age:'23'}
+consol.log(name) //Habibi
+consol.log(age) //undefined
+
 const numbers = [1, 2, 3, 4];
-[num1, ,, num4] = numbers;
+[num1,_,_,num4] = numbers;
 console.log(num1,num4) // 1,4
 
 # copy object in place, copy immutable way, called spread
@@ -73,7 +173,7 @@ console.log(doubleNumArray);
 
 //[1, 2, 3][2, 4, 6]
 
-# SECTION 3
+# [SECTION 3]
 
 workflow
 
