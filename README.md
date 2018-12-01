@@ -204,9 +204,50 @@ node.js (use as package manager)cd
 
 # JSX
 
-class : className
+- has HTML code
+- can't use class, because it is a reserved keyword, but we can use className
+
+# Create react element and compile
+
+- React.createElement("h1", {className: 'App'}, "Hello React!")
+
+# Symbol
+
+- round brackets/parentheses ()
+- square brackets []
+- curly brackets {}
 
 # Component
 
-reusable
-configureable
+- use capital starting character
+- because all element use lowercase e.g div
+- maintanable, reusable, configurable, dynamic content, flexible
+
+# Props
+
+- props : attribute from component
+- function-based component = props.attribute
+- class-based component = this.props
+
+- props.children = element between opening & closing tag of component
+- changing props
+
+# State
+
+- a special property name
+- manage inside in class component, not in function component
+- class-based component = this.state.propsName
+- If state is changed, it will re render the DOM
+
+# ES6
+
+- this.state / this.props in class component
+
+# setState()
+
+- allows to update special property (state)
+
+# Styling component
+
+- global css code
+- in head on browser console
