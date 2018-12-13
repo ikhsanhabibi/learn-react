@@ -209,6 +209,8 @@ node.js (use as package manager)cd
 
 # Create react element and compile
 
+- React.createElement("h1", null, "Hello React!")
+- React.createElement("div", null, React.createElement("h1", null, "Hello React!"))
 - React.createElement("h1", {className: 'App'}, "Hello React!")
 
 # Symbol
@@ -222,6 +224,11 @@ node.js (use as package manager)cd
 - use capital starting character
 - because all element use lowercase e.g div
 - maintanable, reusable, configurable, dynamic content, flexible
+
+how to create?
+
+- container: extend Component Object provided React (if you want manipulate state)
+- create function (use this! return JSX)
 
 # Props
 
@@ -238,6 +245,7 @@ node.js (use as package manager)cd
 - manage inside in class component, not in function component
 - class-based component = this.state.propsName
 - If state is changed, it will re render the DOM
+- JavaScript object
 
 # ES6
 
@@ -247,7 +255,8 @@ node.js (use as package manager)cd
 
 - allows to update special property (state)
 
-# Styling component
+# Styling the component
 
-- global css code
-- in head on browser console
+- global css code (css file)
+- exists in head on browser console
+- there is two kind of styling : inline style & external css file (import it)
