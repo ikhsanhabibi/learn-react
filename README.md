@@ -260,3 +260,7 @@ how to create?
 - global css code (css file)
 - exists in head on browser console
 - there is two kind of styling : inline style & external css file (import it)
+
+================================================
+
+- functional component: no lifecycle method, no state management
